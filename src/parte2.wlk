@@ -22,6 +22,7 @@ object sanMartin {
 	method echarATodos() {
 		tropas = []
 	}
+
 	
 	method tamanioEjercito() {
 		return tropas.size()	
@@ -100,6 +101,9 @@ object capitanRealista {
 	method tamanioEjercito() {
 		return soldados
 	}
+	method coeficienteDePoder(){
+		return coeficienteDePoder
+	}
 	
 	method poder() {
 		return coeficienteDePoder * self.tamanioEjercito()
@@ -111,6 +115,7 @@ object capitanRealista {
 	
 	method recibirAtaque(tropa) {
 		coeficienteDePoder -= tropa.poder() / 10
+		soldados -= tropa.poder()
 	}
 }
 

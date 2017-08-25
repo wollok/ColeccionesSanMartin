@@ -41,7 +41,15 @@ describe "San Martin" {
 	
 	test "si ataca al realista, lo daña" {
 		sanMartin.atacar(capitanRealista)
-		assert.equals(497.5, capitanRealista.poder())
+		assert.equals(99.5, capitanRealista.coeficienteDePoder())
+	}
+	test "si ataca al realista, el poder disminuye" {
+		sanMartin.atacar(capitanRealista)
+		assert.equals(0, capitanRealista.poder())
+	}
+	test "si ataca al realista, pierde tropas" {
+		sanMartin.atacar(capitanRealista)
+		assert.equals(0,capitanRealista.tamanioEjercito() )
 	}
 	
 }	
