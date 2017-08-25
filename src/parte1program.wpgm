@@ -1,0 +1,23 @@
+import parte1.*
+program parte1Program {
+	console.println(sanMartin)
+	sanMartin.reclutar(cabral)
+	sanMartin.reclutar(luisBeltran)
+	sanMartin.reclutar(remedios)
+	console.println(sanMartin)
+	sanMartin.echar(remedios)
+	console.println(sanMartin)
+	console.println(sanMartin.formaParte(cabral))
+	console.println(sanMartin.formaParte(superAgente86))
+	console.println(sanMartin.suficientesCaballos())
+	sanMartin.echarATodos()
+	sanMartin.reclutar(cabral)
+	sanMartin.reclutar(luisBeltran)
+	console.println(sanMartin)
+	console.println(sanMartin.ejercitoMasNumeroso(capitanRealista))
+	console.println(sanMartin.leDaMiedo(capitanRealista))
+	console.println(sanMartin.ejercitoMasNumeroso(capitanRealista))
+	console.println(capitanRealista)
+	sanMartin.atacar(capitanRealista)
+	console.println(capitanRealista)
+}
