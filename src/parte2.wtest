@@ -4,30 +4,7 @@ describe "San Martin" {
 		sanMartin.reclutar(luisBeltran)
 	}
 	
-	/** Parte 1, los tests deben seguir andando! */
-	test "empieza con 10 caballos" {
-		assert.equals(10, sanMartin.caballos())
-	}
-	
-	test "echar a todos deja a San Martin sin nadie" {
-		sanMartin.echarATodos()
-		assert.equals([], sanMartin.tropas())
-	}
-	test "al empezar, cabral no esta en el ejercito" {
-		assert.notThat(sanMartin.formaParte(cabral))
-	}
-	test "con 11 soldados no tiene suficientes caballos" {
-		10.times { sanMartin.reclutar(superAgente86) }
-		assert.notThat(sanMartin.suficientesCaballos())
-	}
-	test "al empezar no tiene un ejercito más numeroso que el otro" {
-		assert.notThat(sanMartin.ejercitoMasNumeroso(capitanRealista))
-	}
-	test "con muchos soldados tiene un ejercito más numeroso que el otro" {
-		10.times { sanMartin.reclutar(superAgente86) }
-		assert.that(sanMartin.ejercitoMasNumeroso(capitanRealista))
-	}
-	
+
 	/** Parte 2 */
 	
 	test "si va a visitar la ciudad de San Lorenzo, sus tropas se entrenan" {
