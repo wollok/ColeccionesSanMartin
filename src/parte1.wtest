@@ -9,7 +9,7 @@ describe "San Martin" {
 	}
 	
 	method reclutacionForzosa(){
-		cantidadLimite.times { sanMartin.reclutar(soldadoPreferido) }
+		cantidadLimite.times {x=> sanMartin.reclutar(soldadoPreferido) }
 	}
 	
 	test "empieza con 10 caballos" {
@@ -32,10 +32,10 @@ describe "San Martin" {
 		self.reclutacionForzosa()
 		assert.notThat(sanMartin.suficientesCaballos())
 	}
-	test "al empezar no tiene un ejercito más numeroso que el otro" {
+	test "al empezar no tiene un ejercito mï¿½s numeroso que el otro" {
 		assert.notThat(sanMartin.ejercitoMasNumeroso(capitanRealista))
 	}
-	test "con muchos soldados tiene un ejercito más numeroso que el otro" {
+	test "con muchos soldados tiene un ejercito mï¿½s numeroso que el otro" {
 		self.reclutacionForzosa()
 		assert.that(sanMartin.ejercitoMasNumeroso(capitanRealista))
 	}

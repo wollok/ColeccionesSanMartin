@@ -79,7 +79,7 @@ object sanLorenzo {
 		return poblacion.filter({soldado => soldado.poder() > 0})
 	}
 	method noCombatientes(){
-		return poblacion.filter({soldado => !self.soldadosParaReclutar().includes(soldado)})
+		return poblacion.filter({soldado => !self.soldadosParaReclutar().contains(soldado)})
 	}
 	method entrenarA(tropas){
 		tropas.forEach({tropa => tropa.entrenar()})	
