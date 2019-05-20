@@ -1,4 +1,7 @@
 # ColeccionesSanMartin
+ 
+[![Build Status](https://travis-ci.org/wollok/ColeccionesSanMartin.svg?branch=master)](https://travis-ci.org/wollok/ColeccionesSanMartin)
+
 Ejercicio con colecciones
 
 ## La batalla de San Lorenzo
