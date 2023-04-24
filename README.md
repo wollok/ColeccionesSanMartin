@@ -1,10 +1,9 @@
-# ColeccionesSanMartin
- 
+# La batalla de San Lorenzo
+
 [![Build Status](https://travis-ci.org/wollok/ColeccionesSanMartin.svg?branch=master)](https://travis-ci.org/wollok/ColeccionesSanMartin)
 
-Ejercicio con colecciones
+**Ejercicio con colecciones**
 
-## La batalla de San Lorenzo
 
 San Martín, que viajó desde el pasado y no recuerda el resultado de sus batallas, se encuentra preparando un programa para simular la batalla de San Lorenzo. 
 
